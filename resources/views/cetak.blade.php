@@ -12,6 +12,7 @@
         table{
         border-collapse: collapse;
         width:100%;
+        text-align:center;
       }
          table, th, td{
         border: 1px solid #708090;
@@ -22,7 +23,7 @@
         color: aliceblue;
       }
       td{
-        text-align: left;
+        text-align: center;
         margin-left: 10px !important;
       }
       br{
@@ -74,28 +75,18 @@
     </style>
 </head>
 <body>
-    <div class="header">
-            <div class="logo">
-                    <img  class="pemko" src="images/logo_pemprov.png">
-            </div>
-            <div class="headtext">
-                <h4 style="margin:0px;">ujian</h4>
-            </div>
-            <br>
-    </div>
-    <hr style="margin-top:1px;">
     <div class="container">
         <div class="isi">
-            <h2 style="text-align:center;">DATA LABORATORIUM</h2>
+            <h2 style="text-align:center;">LAPORAN LABORATORIUM</h2>
             <table class="table">
                         <thead>
                         <tr>
-                            <th scope="col">No</th>
-                            <th scope="col">Nama</th>
-                            <th scope="col">Foto</th>
-                            <th scope="col">NPM</th>
-                            <th scope="col">Kelas</th>
-                            <th scope="col">Semester</th>
+                            <th class="text-center" scope="col">No</th>
+                            <th class="text-center" scope="col">Nama</th>
+                            <th class="text-center" scope="col">Foto</th>
+                            <th class="text-center" scope="col">NPM</th>
+                            <th class="text-center" scope="col">Kelas</th>
+                            <th class="text-center" scope="col">Semester</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -112,21 +103,7 @@
                         </tbody>
                     </table>
                       <br>
-                      <br>
-                      <table style="border:none;">
-                      <tr style="border:none;">
-                      <td style="width:70%; border:none;"></td>
-                      <td style="text-align:center; border:none;">
-                      <h5> <p>Banjarbaru, {{ $tgl }}</p></h5>
-                        <h6>Mengetahui</h6>
-                        <h5>Kepala Balai Pengujian dan Sertifikasi Mutu Barang</h5>
-                        <br>
-                        <br>
-                        <h5 style="text-decoration:underline;">Drs.Anang Aliansyah</h5>
-                        <h5>NIP. 19580726 1984 03 1 007</h5>
-                      </td>
-                      </tr>
-                      </table>
+
                     </div>
              </div>
          </body>

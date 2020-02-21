@@ -19,7 +19,7 @@
                         <div class="form-group"><label for="nama" class="form-control-label">Semester</label><input type="number" name="semester" id="semester" placeholder="semester" class="form-control" value="{{$ujian->semester}}"></div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="/" type="button" class="btn btn-secondary" data-dismiss="modal">Batal</a>
                     <button type="submit" class="btn btn-primary">ubah data</button>
                 </form>
                 </div>

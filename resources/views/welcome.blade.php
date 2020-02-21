@@ -7,7 +7,7 @@
             <div class="card" >
                 <div class="card-header">Data -
                     <div class="text-right">
-                        <a href="/cetak" class="btn btn-primary"> cetak data</a>
+                        <a href="cetak" class="btn btn-primary"> cetak data</a>
                         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">+ tambah data</button>                    </div>
                 </div>
                 <div class="card-body">

@@ -39,7 +39,7 @@
                         @endforeach
                     </tbody>
                 </table>
-                tes aja
+                tes
                 </div>
             </div>
         </div>

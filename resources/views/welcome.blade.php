@@ -15,22 +15,20 @@
                         <tr>
                             <th scope="col" class="text-center">No</th>
                             <th scope="col" class="text-center">Nama</th>
-                            <th scope="col" class="text-center">Foto</th>
-                            <th scope="col" class="text-center">NPM</th>
-                            <th scope="col" class="text-center">Kelas</th>
-                            <th scope="col" class="text-center">Semester</th>
+                            <th scope="col" class="text-center">tipe</th>
+                            <th scope="col" class="text-center">Jumlah</th>
+                            <th scope="col" class="text-center">Harga</th>
                             <th scope="col" class="text-center">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach( $ujian as $u)
+                        @foreach( $transaksi as $u)
                         <tr>
                             <td class="text-center">{{$loop->iteration}}</td>
                             <td class="text-center">{{$u->nama}}</td>
-                            <td class="text-center"><img src="img/ujian/{{$u->foto}}" width="40" class="rounded-circle" alt="Cinque Terre"></td>
-                            <td class="text-center">{{$u->NPM}}</td>
-                            <td class="text-center">{{$u->kelas}}</td>
-                            <td class="text-center">{{$u->semester}}</td>
+                            <td class="text-center">{{$u->tipe}}</td>
+                            <td class="text-center">{{$u->jumlah}}</td>
+                            <td class="text-center">Rp.{{$u->harga}}</td>
                             <td class="text-center">
                                 <a class="btn btn-info" href="edit/{{$u->id}}">Edit</a>
                                 <a class="btn btn-danger" href="hapus/{{$u->id}}">Hapus</a>
@@ -39,7 +37,6 @@
                         @endforeach
                     </tbody>
                 </table>
-                tes
                 </div>
             </div>
         </div>
@@ -59,11 +56,10 @@
       <div class="modal-body">
       <form action="" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
-            <div class="form-group"><label for="nama" class="form-control-label">Nama</label><input type="text" name="nama" id="nama" placeholder="nama" class="form-control"></div>
-            <div class="form-group"><label for="nama" class="form-control-label">NPM</label><input type="text" name="NPM" id="NPM" placeholder="NPM" class="form-control"></div>
-            <div class="form-group"><label for="nama" class="form-control-label">Foto</label><input type="file" name="foto" id="foto" placeholder="foto" class="form-control"></div>
-            <div class="form-group"><label for="nama" class="form-control-label">kelas</label><input type="number" name="kelas" id="kelas" placeholder="kelas" class="form-control"></div>
-            <div class="form-group"><label for="nama" class="form-control-label">Semester</label><input type="number" name="semester" id="semester" placeholder="semester" class="form-control"></div>
+            <div class="form-group"><label for="nama" class="form-control-label">Nama Barang</label><input type="text" name="nama" id="nama" placeholder="nama" class="form-control"></div>
+            <div class="form-group"><label for="nama" class="form-control-label">Tipe Barang</label><input type="text" name="tipe" id="tipe" placeholder="tipe" class="form-control"></div>
+            <div class="form-group"><label for="nama" class="form-control-label">Jumlah Barang</label><input type="text" name="jumlah" id="jumlah" placeholder="jumlah" class="form-control"></div>
+            <div class="form-group"><label for="nama" class="form-control-label">Harga Barang</label><input type="text" name="harga" id="harga" placeholder="harga" class="form-control"></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -77,30 +77,28 @@
 <body>
     <div class="container">
         <div class="isi">
-            <h2 style="text-align:center;">LAPORAN LABORATORIUM</h2>
+            <h2 style="text-align:center;">LAPORAN TRANSAKSI</h2>
             <table class="table">
-                        <thead>
+            <thead>
                         <tr>
-                            <th class="text-center" scope="col">No</th>
-                            <th class="text-center" scope="col">Nama</th>
-                            <th class="text-center" scope="col">Foto</th>
-                            <th class="text-center" scope="col">NPM</th>
-                            <th class="text-center" scope="col">Kelas</th>
-                            <th class="text-center" scope="col">Semester</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        @foreach( $ujian as $u)
+                            <th scope="col" class="text-center">No</th>
+                            <th scope="col" class="text-center">Nama</th>
+                            <th scope="col" class="text-center">tipe</th>
+                            <th scope="col" class="text-center">Jumlah</th>
+                            <th scope="col" class="text-center">Harga</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach( $transaksi as $u)
                         <tr>
-                            <td>{{$loop->iteration}}</td>
-                            <td>{{$u->nama}}</td>
-                            <td><img src="img/ujian/{{$u->foto}}" width="40" class="rounded-circle" alt="Cinque Terre"></td>
-                            <td>{{$u->NPM}}</td>
-                            <td>{{$u->kelas}}</td>
-                            <td>{{$u->semester}}</td>
+                            <td class="text-center">{{$loop->iteration}}</td>
+                            <td class="text-center">{{$u->nama}}</td>
+                            <td class="text-center">{{$u->tipe}}</td>
+                            <td class="text-center">{{$u->jumlah}}</td>
+                            <td class="text-center">Rp.{{$u->harga}}</td>
                         </tr>
                         @endforeach
-                        </tbody>
+                    </tbody>
                     </table>
                       <br>
 

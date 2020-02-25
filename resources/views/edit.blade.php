@@ -12,11 +12,10 @@
                 <form action="" method="post" enctype="multipart/form-data">
                 @csrf
                 {{ method_field('PUT') }}
-                        <div class="form-group"><label for="nama" class="form-control-label">Nama</label><input type="text" name="nama" id="nama" placeholder="nama" class="form-control" value="{{$ujian->nama}}"></div>
-                        <div class="form-group"><label for="nama" class="form-control-label">NPM</label><input type="text" name="NPM" id="NPM" placeholder="NPM" class="form-control" value="{{$ujian->NPM}}"></div>
-                        <div class="form-group"><label for="nama" class="form-control-label">Foto</label><input type="file" name="foto" id="foto" placeholder="foto" class="form-control" value="{{$ujian->foto}}"></div>
-                        <div class="form-group"><label for="nama" class="form-control-label">kelas</label><input type="number" name="kelas" id="kelas" placeholder="kelas" class="form-control" value="{{$ujian->kelas}}"></div>
-                        <div class="form-group"><label for="nama" class="form-control-label">Semester</label><input type="number" name="semester" id="semester" placeholder="semester" class="form-control" value="{{$ujian->semester}}"></div>
+                        <div class="form-group"><label for="nama" class="form-control-label">Nama</label><input type="text" name="nama" id="nama" placeholder="nama" class="form-control" value="{{$transaksi->nama}}"></div>
+                        <div class="form-group"><label for="nama" class="form-control-label">Tipe</label><input type="text" name="tipe" id="tipe" placeholder="tipe" class="form-control" value="{{$transaksi->tipe}}"></div>
+                        <div class="form-group"><label for="nama" class="form-control-label">Jumlah</label><input type="text" name="jumlah" id="jumlah" placeholder="jumlah" class="form-control" value="{{$transaksi->jumlah}}"></div>
+                        <div class="form-group"><label for="nama" class="form-control-label">Harga</label><input type="text" name="harga" id="harga" placeholder="harga" class="form-control" value="{{$transaksi->harga}}"></div>
                 </div>
                 <div class="modal-footer">
                     <a href="/" type="button" class="btn btn-secondary" data-dismiss="modal">Batal</a>

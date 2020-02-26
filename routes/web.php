@@ -13,14 +13,14 @@
 
 
 Route::get('/','UjianController@get')
-->name('transaksi_index');
+->name('ujian_index');
 Route::post('/','UjianController@create')
-->name('transaksi_tambah');
+->name('ujian_tambah');
 Route::get('/edit/{id}','UjianController@find')
-->name('transaksi_edit');
+->name('ujian_edit');
 Route::put('/edit/{id}','UjianController@update')
-->name('transaksi_update');
+->name('ujian_update');
 Route::get('/hapus/{id}','UjianController@delete')
-->name('transaksi_hapus');
+->name('ujian_hapus');
 Route::get('/cetak','UjianController@cetak')
 ->name('cetak');

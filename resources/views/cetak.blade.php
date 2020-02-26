@@ -89,7 +89,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach( $transaksi as $u)
+                        @foreach( $ujian as $u)
                         <tr>
                             <td class="text-center">{{$loop->iteration}}</td>
                             <td class="text-center">{{$u->nama}}</td>

@@ -8,7 +8,7 @@
                     <div class="text-right">
                         <a href="cetak" class="btn btn-primary"> cetak data</a>
                         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">+ tambah data</button>                    </div>
-                </div> 
+                </div>
                 <div class="card-body">
                 <table class="table table-striped">
                     <thead>
@@ -22,7 +22,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach( $transaksi as $u)
+                        @foreach( $ujian as $u)
                         <tr>
                             <td class="text-center">{{$loop->iteration}}</td>
                             <td class="text-center">{{$u->nama}}</td>

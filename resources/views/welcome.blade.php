@@ -28,7 +28,7 @@
                             <td class="text-center">{{$u->nama}}</td>
                             <td class="text-center">{{$u->tipe}}</td>
                             <td class="text-center">{{$u->jumlah}}</td>
-                            <td class="text-center">Rp.{{$u->harga}}</td>
+                            <td class="text-center">{{$u->harga}}</td>
                             <td class="text-center">
                                 <a class="btn btn-info" href="edit/{{$u->id}}">Edit</a>
                                 <a class="btn btn-danger" href="hapus/{{$u->id}}">Hapus</a>

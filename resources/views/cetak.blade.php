@@ -95,7 +95,7 @@
                             <td class="text-center">{{$u->nama}}</td>
                             <td class="text-center">{{$u->tipe}}</td>
                             <td class="text-center">{{$u->jumlah}}</td>
-                            <td class="text-center">Rp.{{$u->harga}}</td>
+                            <td class="text-center">{{$u->harga}}</td>
                         </tr>
                         @endforeach
                     </tbody>

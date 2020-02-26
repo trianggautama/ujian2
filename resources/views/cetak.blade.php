@@ -77,25 +77,27 @@
 <body>
     <div class="container">
         <div class="isi">
-            <h2 style="text-align:center;">LAPORAN TRANSAKSI</h2>
+            <h2 style="text-align:center;">LAPORAN SISWA</h2>
             <table class="table">
             <thead>
                         <tr>
                             <th scope="col" class="text-center">No</th>
+                            <th scope="col" class="text-center">NIS</th>
                             <th scope="col" class="text-center">Nama</th>
-                            <th scope="col" class="text-center">tipe</th>
-                            <th scope="col" class="text-center">Jumlah</th>
-                            <th scope="col" class="text-center">Harga</th>
+                            <th scope="col" class="text-center">Alamat</th>
+                            <th scope="col" class="text-center">Nama Orang Tua</th>
+                            <th scope="col" class="text-center">Nomor HP</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach( $ujian as $u)
                         <tr>
                             <td class="text-center">{{$loop->iteration}}</td>
+                            <td class="text-center">{{$u->NIS}}</td>
                             <td class="text-center">{{$u->nama}}</td>
-                            <td class="text-center">{{$u->tipe}}</td>
-                            <td class="text-center">{{$u->jumlah}}</td>
-                            <td class="text-center">{{$u->harga}}</td>
+                            <td class="text-center">{{$u->alamat}}</td>
+                            <td class="text-center">{{$u->ortu}}</td>
+                            <td class="text-center">{{$u->no_hp}}</td>
                         </tr>
                         @endforeach
                     </tbody>

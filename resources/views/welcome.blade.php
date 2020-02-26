@@ -14,10 +14,11 @@
                     <thead>
                         <tr>
                             <th scope="col" class="text-center">No</th>
+                            <th scope="col" class="text-center">NIS</th>
                             <th scope="col" class="text-center">Nama</th>
-                            <th scope="col" class="text-center">tipe</th>
-                            <th scope="col" class="text-center">Jumlah</th>
-                            <th scope="col" class="text-center">Harga</th>
+                            <th scope="col" class="text-center">Alamat</th>
+                            <th scope="col" class="text-center">Nama Orang Tua</th>
+                            <th scope="col" class="text-center">Nomor HP</th>
                             <th scope="col" class="text-center">Aksi</th>
                         </tr>
                     </thead>
@@ -25,10 +26,11 @@
                         @foreach( $ujian as $u)
                         <tr>
                             <td class="text-center">{{$loop->iteration}}</td>
+                            <td class="text-center">{{$u->NIS}}</td>
                             <td class="text-center">{{$u->nama}}</td>
-                            <td class="text-center">{{$u->tipe}}</td>
-                            <td class="text-center">{{$u->jumlah}}</td>
-                            <td class="text-center">{{$u->harga}}</td>
+                            <td class="text-center">{{$u->alamat}}</td>
+                            <td class="text-center">{{$u->ortu}}</td>
+                            <td class="text-center">{{$u->no_hp}}</td>
                             <td class="text-center">
                                 <a class="btn btn-info" href="edit/{{$u->id}}">Edit</a>
                                 <a class="btn btn-danger" href="hapus/{{$u->id}}">Hapus</a>
@@ -56,10 +58,11 @@
       <div class="modal-body">
       <form action="" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
-            <div class="form-group"><label for="nama" class="form-control-label">Nama Barang</label><input type="text" name="nama" id="nama" placeholder="nama" class="form-control"></div>
-            <div class="form-group"><label for="nama" class="form-control-label">Tipe Barang</label><input type="text" name="tipe" id="tipe" placeholder="tipe" class="form-control"></div>
-            <div class="form-group"><label for="nama" class="form-control-label">Jumlah Barang</label><input type="text" name="jumlah" id="jumlah" placeholder="jumlah" class="form-control"></div>
-            <div class="form-group"><label for="nama" class="form-control-label">Harga Barang</label><input type="text" name="harga" id="harga" placeholder="harga" class="form-control"></div>
+            <div class="form-group"><label for="nama" class="form-control-label">NIS</label><input type="text" name="NIS" id="NIS" placeholder="NIS" class="form-control"></div>
+            <div class="form-group"><label for="NAMA" class="form-control-label">Nama</label><input type="text" name="nama" id="nama" placeholder="nama" class="form-control"></div>
+            <div class="form-group"><label for="nama" class="form-control-label">Alamat</label><input type="text" name="alamat" id="alamat" placeholder="alamat" class="form-control"></div>
+            <div class="form-group"><label for="nama" class="form-control-label">Nama Orang Tua</label><input type="text" name="ortu" id="ortu" placeholder="ortu" class="form-control"></div>
+            <div class="form-group"><label for="nama" class="form-control-label">Nomor Hp</label><input type="text" name="no_hp" id="no_hp" placeholder="no_hp" class="form-control"></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
